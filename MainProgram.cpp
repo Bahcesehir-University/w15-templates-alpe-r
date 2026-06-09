@@ -137,7 +137,7 @@ public:
     void set(int index, const T& value) {
         if (index < 0 || index >= N)
          throw std::out_of_range("FixedArray index out of range");
-        data_[index = value];
+        data_[index] = value;
         // replace
     }
 
